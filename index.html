@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=697 height=905 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1400 height=1800 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Builds.loader.js";
+      var loaderUrl = buildUrl + "/PhotonDev.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Builds.data",
-        frameworkUrl: buildUrl + "/Builds.framework.js",
-        codeUrl: buildUrl + "/Builds.wasm",
+        dataUrl: buildUrl + "/PhotonDev.data",
+        frameworkUrl: buildUrl + "/PhotonDev.framework.js",
+        codeUrl: buildUrl + "/PhotonDev.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Techwisely",
         productName: "Photonology",
@@ -94,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "697px";
-        canvas.style.height = "905px";
+        canvas.style.width = "1400px";
+        canvas.style.height = "1800px";
       }
 
       loadingBar.style.display = "block";
